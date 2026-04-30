@@ -11,3 +11,20 @@ int main() {
 
     return 0;
 }
+
+
+//global variable
+int globalvariable=100;
+
+int main(){
+    //local variable
+    int userInput;
+    float result;
+    
+    cin>>userInput ;
+    result=(double)globalvariable/userInput;
+    
+    cout<<result<<endl;
+    return 0;
+    
+}
