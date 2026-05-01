@@ -32,3 +32,65 @@ int main() {
     }
     return 0;
 }
+
+//problem 3
+#include<iostream>
+using namespace std;
+
+int main (){
+    int age;
+    cin>>age;
+    
+    if(age>=18){
+        if(age>= 100){
+            cout<<"eligible for vote(but we are super senior citizen)";
+        }else {
+            cout <<"Eligible for vote";
+        }
+        }else{
+            if(age < 0){
+                cout <<"Enter a valid age number";
+            }else{
+                cout<<"Not Eligible for vote";
+            }
+        } return 0;
+        
+    }
+
+//problem 4
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int a,b;
+    int max_number;
+    
+    cin >> a >> b;
+    //ternary operator
+    max_number=(a > b) ? a:b ;
+    cout << max_number;
+    return 0;
+}
+//problem5
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    int sum=0;
+    
+    while(true){
+        cin>> n;
+        
+        if(n<0){
+            break;
+        }
+        sum = sum+n;
+    }
+    cout <<sum;
+    return 0;
+}
+   
+   
