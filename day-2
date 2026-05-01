@@ -92,5 +92,58 @@ int main(){
     cout <<sum;
     return 0;
 }
-   
-   
+
+//problem 6
+
+#include<iostream>
+using namespace std;
+int main(){
+    string dayOrnight;
+    bool motionDetected;
+    
+    cout<<"is it day or night ?:";
+    cin>>dayOrnight;
+    cout<<"Is motion Detected ? (1 for yes ,0 for no) :" ;
+    cin>>motionDetected;
+    
+    if(dayOrnight== "night" || dayOrnight== "Night"){
+        if(motionDetected){
+            cout<<"turn on led lights with 100 percent brightness..";
+        }else{
+            cout<<"turn on led lights with only 10percent brightness..";
+        }
+    }else{
+            cout<<"turn off the lights ";
+        }
+        return 0;
+    
+}
+
+//problem 8
+//customer support
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int choice;
+    cin>>choice;
+    
+    switch(choice){
+        case 1:
+        cout<<"transferring call to the customer support..";
+        break;
+        case 2:
+        cout<<"transferring call to billing and accounts..";
+        break;
+        case 3:
+        cout<<"connecting to technical help desk...";
+        break;
+        case 4:
+        cout<<"connecting call to the agent...";
+        break;
+        default:
+        cout<<"Invalid selection ,Enter a alid number...";
+    }
+    return 0;
+}
